@@ -11,7 +11,7 @@ import scala.concurrent.Await
 class RestClient {
 
   def executeGet(endPoint : String): String ={
-    val req = url(endPoint);
+    val req = url(endPoint) <:< Map("accept" -> "application/json");
     val res = Http(req OK as.String);
     Await.result(res,5000 millis)
   }
