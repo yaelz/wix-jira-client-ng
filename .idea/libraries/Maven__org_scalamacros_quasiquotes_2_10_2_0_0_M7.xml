@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.scalamacros:quasiquotes_2.10:2.0.0-M7">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/scalamacros/quasiquotes_2.10/2.0.0-M7/quasiquotes_2.10-2.0.0-M7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/scalamacros/quasiquotes_2.10/2.0.0-M7/quasiquotes_2.10-2.0.0-M7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/scalamacros/quasiquotes_2.10/2.0.0-M7/quasiquotes_2.10-2.0.0-M7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

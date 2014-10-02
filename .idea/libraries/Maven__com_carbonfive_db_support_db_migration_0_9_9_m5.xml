@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.carbonfive.db-support:db-migration:0.9.9-m5">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/carbonfive/db-support/db-migration/0.9.9-m5/db-migration-0.9.9-m5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/carbonfive/db-support/db-migration/0.9.9-m5/db-migration-0.9.9-m5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/carbonfive/db-support/db-migration/0.9.9-m5/db-migration-0.9.9-m5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

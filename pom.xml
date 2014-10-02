@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.wixpress.ci</groupId>
+    <artifactId>wix-jira-client-ng</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>wix-jira-client-ng</name>
+    <description>JIRA REST client in scala</description>
+    <url>${project_url}/${artifactId}</url>
+
+    <parent>
+        <groupId>com.wixpress.common</groupId>
+        <artifactId>wix-scala-parent-ng</artifactId>
+        <version>100.0.0-SNAPSHOT</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.wixpress.common</groupId>
+            <artifactId>wix-framework-scala-dependencies</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.wixpress.common</groupId>
+            <artifactId>wix-framework-scala-test-dependencies</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.wixpress.common</groupId>
+            <artifactId>wix-integration-test-framework</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.databinder.dispatch</groupId>
+            <artifactId>dispatch-core_2.10</artifactId>
+            <!--<version>0.11.2</version>-->
+        </dependency>
+    </dependencies>
+</project>
