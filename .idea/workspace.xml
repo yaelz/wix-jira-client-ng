@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="958793d7-819f-4a7b-b14d-df10e3e5f3ca" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/it/scala/com/wixpress/ci/jiraclient/rest/RestClientIT.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wix-jira-client-ng.iws" />
@@ -121,8 +122,8 @@
       <file leaf-file-name="RestClientIT.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/it/scala/com/wixpress/ci/jiraclient/rest/RestClientIT.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27918783" vertical-offset="135" max-vertical-offset="1065">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.7360406" vertical-offset="135" max-vertical-offset="1065">
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
               <folding>
                 <element signature="e#41#89#0" expanded="true" />
               </folding>
@@ -858,17 +859,21 @@
       <workItem from="1414043131023" duration="8000" />
       <workItem from="1414043144456" duration="929000" />
       <workItem from="1414044091581" duration="461000" />
-      <workItem from="1414044558079" duration="19890000" />
+      <workItem from="1414044558079" duration="20049000" />
     </task>
     <task id="LOCAL-00001" summary="added tests added post">
       <created>1414068238017</created>
       <updated>1414068238017</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added tests added post">
+      <created>1414074825934</created>
+      <updated>1414074825934</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28096000" />
+    <option name="totallyTimeSpent" value="28255000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3807" y="-119" width="1851" height="1086" extended-state="0" />
@@ -1139,8 +1144,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/it/scala/com/wixpress/ci/jiraclient/rest/RestClientIT.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27918783" vertical-offset="135" max-vertical-offset="1065">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.7360406" vertical-offset="135" max-vertical-offset="1065">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
           <folding>
             <element signature="e#41#89#0" expanded="true" />
           </folding>
