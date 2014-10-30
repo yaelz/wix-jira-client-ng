@@ -5,7 +5,7 @@
       <configuration>
         <option name="compilerLibraryLevel" value="Project" />
         <option name="compilerLibraryName" value="Maven: org.scala-lang:scala-compiler-bundle:2.10.4" />
-        <option name="compilerOptions" value="-feature -Xfatal-warnings" />
+        <option name="compilerOptions" value="-feature" />
         <option name="deprecationWarnings" value="true" />
         <option name="vmOptions" value="" />
       </configuration>
@@ -31,26 +31,26 @@
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.6.1" level="project" />
     <orderEntry type="library" name="Maven: joda-time:joda-time:2.5" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:16.0.1" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.common:wix-framework:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.common:wix-framework:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.7.3" level="project" />
     <orderEntry type="library" name="Maven: commons-net:commons-net:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.wix:future-perfect_2.10:0.1.9" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.10.4" level="project" />
     <orderEntry type="library" name="Maven: com.twitter:util-core_2.10:6.20.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-core:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-data-structures:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-time-utils:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-core:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-data-structures:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-time-utils:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:2.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.joda:joda-convert:1.7" level="project" />
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-all:1.3" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-reflection:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-reflection:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.9.1" level="project" />
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.0.4" level="project" />
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.4.3" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-configuration-spring:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-configuration:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-configuration-spring:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-configuration:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: commons-configuration:commons-configuration:1.10" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.1.1.RELEASE" level="project" />
@@ -61,57 +61,57 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.1.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.1.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.6.9" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-validation:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-validation:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: javax.validation:validation-api:1.0.0.GA" level="project" />
     <orderEntry type="library" name="Maven: org.apache.bval:bval-core:0.3-incubating" level="project" />
     <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils-core:1.8.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.bval:bval-jsr303:0.3-incubating" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-updatable:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.framework:environment-provider:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-updatable:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.framework:environment-provider:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.4.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.4.3" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-projektor-spring:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-projektor-validations:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-projektor:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-projektor-spring:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-projektor-validations:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-projektor:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: net.sf.dozer:dozer:5.3.2" level="project" />
     <orderEntry type="library" name="Maven: cglib:cglib-nodep:2.2.2" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-rpc:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-rpc:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-joda:2.4.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.3.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.3.2" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.9" level="project" />
     <orderEntry type="library" name="Maven: com.ning:async-http-client:1.7.19" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty:3.6.6.Final" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-memory:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.common:wix-security:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.common:wix-framework-api-objects:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-builders:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-memory:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.common:wix-security:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.common:wix-framework-api-objects:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-builders:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: qdox:qdox:1.6.1" level="project" />
     <orderEntry type="library" name="Maven: com.newrelic:newrelic-api:2.9.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.common:wix-http-buffer-controller:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.common:wix-http-buffer-controller:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:4.1.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.1.1.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.framework:wix-throttling:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-management-spring:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-management:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.common:wix-experiments:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-jdbc:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.framework:wix-throttling:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-management-spring:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-management:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.common:wix-experiments:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-jdbc:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: com.mchange:c3p0:0.9.2-pre5" level="project" />
     <orderEntry type="library" name="Maven: com.mchange:mchange-commons-java:0.2.3" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.common:wix-feature-toggle-core:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.common:wix-feature-toggle-core:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: net.sf.json-lib:json-lib:jdk15:2.3" level="project" />
     <orderEntry type="library" name="Maven: net.sf.ezmorph:ezmorph:1.0.6" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-cflog-spring:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-cflog:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-cflog-spring:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-cflog:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.0.6" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.0.6" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-json:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-json:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-guava:2.4.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-scala_2.10:2.4.3" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-reflect:2.10.4" level="project" />
     <orderEntry type="library" name="Maven: com.thoughtworks.paranamer:paranamer:2.6" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.framework:wix-velocity:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.framework:wix-velocity:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.velocity:velocity:1.7" level="project" />
     <orderEntry type="library" name="Maven: org.apache.velocity:velocity-tools:2.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.1.1.RELEASE" level="project" />
@@ -122,8 +122,8 @@
     <orderEntry type="library" name="Maven: org.jasypt:jasypt:1.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-orm:4.1.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-oxm:4.1.1.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.1" level="project" />
-    <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.2.1" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.3" level="project" />
+    <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.2.2" level="project" />
     <orderEntry type="library" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.6.9" level="project" />
     <orderEntry type="library" name="Maven: com.jcraft:jzlib:1.0.7" level="project" />
@@ -150,26 +150,26 @@
     <orderEntry type="library" name="Maven: jline:jline:0.9.94" level="project" />
     <orderEntry type="library" name="Maven: org.apache.curator:curator-x-discovery:2.4.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.curator:curator-recipes:2.4.0" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.2" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.2" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-updatable-wix-integration:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.framework:wix-throttling-spring-integration:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.framework:wix-security-integration:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.framework:wix-compatibility-integration:2.567.0" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress:wix-simple-user-agent-detector:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.5.5" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.5.5" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-updatable-wix-integration:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.framework:wix-throttling-spring-integration:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.framework:wix-security-integration:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.framework:wix-compatibility-integration:2.576.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress:wix-simple-user-agent-detector:2.576.0" level="project" />
     <orderEntry type="library" name="Maven: eu.bitwalker:UserAgentUtils:1.14" level="project" />
-    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-scala:2.567.0" level="project" />
+    <orderEntry type="library" name="Maven: com.wixpress.hoopoe:hoopoe-scala:2.576.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.wixpress.common:wix-framework-scala-test-dependencies:1.0.0-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.wixpress.common:wix-framework-test-dependencies:1.0.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.wixpress.common:wix-test-framework:2.567.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.wixpress.hoopoe:hoopoe-utest:2.567.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.wixpress.common:wix-test-framework:2.576.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.wixpress.hoopoe:hoopoe-utest:2.576.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven:maven-model-builder:3.0.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.plexus:plexus-utils:2.0.6" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.plexus:plexus-interpolation:1.14" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.plexus:plexus-component-annotations:1.5.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven:maven-model:3.0.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.wixpress.hoopoe:hoopoe-matchers:2.567.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.wixpress.hoopoe:hoopoe-matchers:2.576.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.specs2:specs2_2.10:2.3.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.scala-lang:scala-compiler:2.10.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.pegdown:pegdown:1.2.1" level="project" />
@@ -199,7 +199,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-util:8.1.5.v20120716" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-servlet:8.1.5.v20120716" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-security:8.1.5.v20120716" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.wixpress.common:wix-integration-test-framework:2.567.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.wixpress.common:wix-integration-test-framework:2.576.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.activemq:activemq-client:5.8.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.fusesource.hawtbuf:hawtbuf:1.9" level="project" />
@@ -229,7 +229,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: com.typesafe.akka:akka-actor_2.10:2.2.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.typesafe:config:1.0.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.typesafe.akka:akka-slf4j_2.10:2.2.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: commons-httpclient:commons-httpclient:3.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-httpclient:commons-httpclient:3.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: mysql:mysql-connector-java:5.1.31" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.elasticsearch:elasticsearch:1.2.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.lucene:lucene-core:4.8.1" level="project" />
@@ -246,10 +246,10 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.lucene:lucene-grouping:4.8.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.lucene:lucene-spatial:4.8.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.spatial4j:spatial4j:0.4.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.wixpress.common:mysql-testkit:2.567.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.wixpress.common:mysql-testkit:2.576.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.reflections:reflections:0.9.9-RC1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: dom4j:dom4j:1.6.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.wixpress.framework:http-test-kit:2.567.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.wixpress.framework:http-test-kit:2.576.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.spray:spray-client:1.2.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.spray:spray-httpx:1.2.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.jvnet.mimepull:mimepull:1.9.4" level="project" />
@@ -258,6 +258,19 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.scalamock:scalamock-core_2.10:3.0.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.scalamock:scalamock-specs2-support_2.10:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: net.databinder.dispatch:dispatch-core_2.10:0.11.0" level="project" />
+    <orderEntry type="library" name="Maven: com.atlassian.jira:jira-rest-java-client:1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-client:1.5" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-core:1.5" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey.contribs:jersey-multipart:1.5" level="project" />
+    <orderEntry type="library" name="Maven: org.jvnet:mimepull:1.4" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey.contribs:jersey-apache-client:1.5" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-json:1.5" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jettison:jettison:1.1" level="project" />
+    <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.5.5" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-xc:1.5.5" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey.contribs.jersey-oauth:oauth-client:1.5" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey.contribs.jersey-oauth:oauth-signature:1.5" level="project" />
   </component>
 </module>
 
