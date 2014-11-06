@@ -1,9 +1,10 @@
 package com.wixpress.ci.jiraclient.client
 
 
+import java.net.URI
 
 import com.atlassian.jira.rest.client.{ProgressMonitor, JiraRestClient}
-import com.atlassian.jira.rest.client.domain.{Comment, Issue}
+import com.atlassian.jira.rest.client.domain.{Visibility, Comment, Issue}
 import com.wixpress.ci.jiraclient.client.rest.RestClient
 import com.wixpress.ci.jiraclient.model.{JiraComment, JiraIssue}
 import scala.collection.JavaConverters._;
@@ -23,6 +24,21 @@ import scala.collection.JavaConverters._;
   def deleteComment(issueId : String, commentId: Long): Unit = {
     internalRestClient.executeDelete(uri + "/" + issueId + "/comment/" + commentId)
   }
+
+  def deleteAllComments(issueId : String): Int = {
+    val issue = this.getIssue(issueId)
+    issue.comments.map(comment => this.deleteComment(issueId, comment.id))
+    issue.comments.length
+  }
+
+//  def addComment(issueId : String, commentString : String): Unit ={
+//    val path : String =uri+ "/rest/api/2/issue/"+issueId+"/comment"
+//    val _uri = new URI(path)
+//
+//    val visability = new Visibility(Visibility.Type.ROLE,"Administrators")
+//    val comment = new Comment(null,commentString,null,null,null,null,visability,null)
+//    restClient.getIssueClient().addComment(progressMonitor,_uri,comment)
+//  }
 
 
 }
