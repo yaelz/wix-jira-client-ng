@@ -7,6 +7,12 @@ import concurrent.duration._
 import org.specs2.time.NoTimeConversions
 import org.specs2.matcher.{Expectable, Matcher}
 import com.wixpress.ci.jiraclient.client.rest.RestClient
+import com.wixpress.framework.test.http.EmbeddedHttpProbe
+import com.wixpress.framework.test.http.EmbeddedHttpProbe.Handler
+import spray.http._
+import spray.http.HttpHeaders.{Authorization, `WWW-Authenticate`}
+import spray.http.StatusCodes.Unauthorized
+
 
 
 /**
@@ -14,7 +20,13 @@ import com.wixpress.ci.jiraclient.client.rest.RestClient
  */
 class RestClientIT extends SpecificationWithJUnit with NoTimeConversions {
 
-  val probe = new EmbeddedHttpProbe(8080)
+  val userName = "whiz"
+  val password = "kid"
+  val probe = new EmbeddedHttpProbe(8080) with BasicAuthentication {
+    override val credentials = BasicHttpCredentials(userName, password)
+
+    override def realm: String = "ASdasdasd"
+  }
 
   def anHttpRequest(headers: Matcher[TraversableOnce[(String, String)]], body: Matcher[String]): Matcher[HttpRequest] = {
 
@@ -41,7 +53,7 @@ class RestClientIT extends SpecificationWithJUnit with NoTimeConversions {
   }
 
   "check get" >> {
-    val client = new RestClient()
+    val client = new RestClient(userName, password)
     client.executeGet("http://localhost:8080")
     probe.requests must eventually(retries = 40, sleep = 100.milliseconds){ contain(anHttpRequest(headers = contain("Accept" -> "application/json"),body = contain("") )) }
 
@@ -49,9 +61,17 @@ class RestClientIT extends SpecificationWithJUnit with NoTimeConversions {
   }
 
   "check post" >> {
-    val client = new RestClient()
-    client.executePost("http://localhost:8080","{\"a\" : \"b\"")
-    probe.requests must eventually(retries = 40, sleep = 100.milliseconds){ contain(anHttpRequest(headers = contain("Accept" -> "application/json") and contain("Content-Type" -> "application/json; charset=UTF-8") ,body = contain("{\"a\" : \"b222\"") )) }
+    val client = new RestClient(userName, password)
+    client.executePost("http://localhost:8080", "{\"a\" : \"b\"")
+    probe.requests must eventually(retries = 40, sleep = 100.milliseconds){ contain(anHttpRequest(headers = contain("Accept" -> "application/json") and contain("Content-Type" -> "application/json; charset=UTF-8") ,body = contain("{\"a\" : \"b\"") )) }
+
+    success
+  }
+
+  "check delete" >> {
+    val client = new RestClient(userName, password)
+    client.executeDelete("http://localhost:8080")
+    probe.requests must eventually(retries = 40, sleep = 100.milliseconds){ contain(anHttpRequest(headers = contain("Accept" -> "application/json"), body = beEqualTo("") )) }
 
     success
   }
@@ -62,4 +82,19 @@ class RestClientIT extends SpecificationWithJUnit with NoTimeConversions {
   }
 
 
+}
+
+trait BasicAuthentication { self: EmbeddedHttpProbe =>
+
+  def credentials: BasicHttpCredentials
+  def realm: String = "My Server"
+
+  private def authorizationHandler: Handler = {
+    case HttpRequest(_, _, headers, _, _) if !headers.contains(Authorization(credentials)) => HttpResponse(Unauthorized, headers = List(`WWW-Authenticate`(HttpChallenge("Basic", realm))))
+  }
+
+  override abstract def reset(): Unit = {
+    self.reset()
+    handlers += authorizationHandler
+  }
 }
