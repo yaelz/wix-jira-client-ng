@@ -3,10 +3,11 @@ package com.wixpress.ci.jiraclient.client
 import java.util
 
 import com.fasterxml.jackson.databind.ObjectMapper
+import scala.collection.mutable.ListBuffer
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
 import com.wixpress.ci.jiraclient.client.rest.RestClient
 import com.wixpress.ci.jiraclient.client.tests.utils.ServerResponseData
-import com.wixpress.ci.jiraclient.model.{JiraComment, Issue}
+import com.wixpress.ci.jiraclient.model.{Comment, Fields, JiraComment, Issue}
 import org.specs2.mock.Mockito
 import org.specs2.mutable.SpecificationWithJUnit
 
@@ -16,36 +17,37 @@ import org.specs2.mutable.SpecificationWithJUnit
 class JiraClientTest extends SpecificationWithJUnit with Mockito {
   val userName = "whiz"
   val password = "kid"
-//  "getIssue" should {
-//    "contains" in {
-//       val comment : Comment = new Comment(null,"whiz kid",null,null,null,null,null,12L)
-//       val comments : util.ArrayList[Comment] = new util.ArrayList[Comment]()
-//       comments.add(comment)
-//       val issue = new Issue("summary",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,comments,null,null,null,null,null,null,null,null,null)
-//       val restClient = mock[JiraRestClient]
-//       val issueClient = mock[IssueRestClient]
-//       restClient.getIssueClient() returns issueClient
-//       val progressMonitor = new NullProgressMonitor()
-//       issueClient.getIssue("issue1", progressMonitor) returns issue
-//       val internalRestClient = new RestClient(userName, password)
-//       val jiraClient = new JiraClient(restClient, progressMonitor,internalRestClient,"")
-//
-//       val jiraComment: Comment = new Comment(12L, "whiz kid")
-//       val commentsLst : List[Comment] = jiraComment :: Nil
-//       val jiraIssue : Issue = new Issue(commentsLst)
-//
-//       val retIssue = jiraClient.getIssue("issue1")
-//       retIssue must equalTo(jiraIssue)
-//
-//    }
-//  }
+  "getIssue" should {
+    "contains" in {
+      val issueKey = "JIR-1"
+      val issueId = "74538"
+      val uri = "http://whiz.kid"
+      val path = "/rest/api/2/issue/"+issueKey
+
+      val responseFromServer = ServerResponseData.getIssueResponseData(issueKey)
+      val restClient = mock[RestClient]
+      restClient.executeGet(uri + path) returns responseFromServer
+      val jiraClient = new JiraClient(restClient, uri)
+      val retVal = jiraClient.getIssue(issueKey)
+
+      val firstComment = new JiraComment("255405","gdfg")
+      val secondComment = new JiraComment("255410","vbcbcv")
+      val commentList : List[JiraComment] = List(firstComment,secondComment);
+
+      val comment = new Comment(commentList)
+      val fields = new Fields(comment)
+      val expected = new Issue(issueId, issueKey, fields)
+
+      retVal must equalTo(expected)
+    }
+  }
     "addComment" should {
       "contains" in {
-        val issueId = "JIR-1"
+        val issueKey = "JIR-1"
         val commentBody = "coment 1"
         val commentId = "12345"
         val uri = "http://whiz.kid"
-        val path = "/rest/api/2/issue/"+issueId+"/comment"
+        val path = "/rest/api/2/issue/"+issueKey+"/comment"
         val commentToAdd  = new JiraComment(body=commentBody)
 
         val responseFromServer = ServerResponseData.addCommentResponseData(commentId,commentBody);
@@ -58,7 +60,7 @@ class JiraClientTest extends SpecificationWithJUnit with Mockito {
 
         restClient.executePost(uri+path, jsonCommentBodyString) returns responseFromServer
         val jiraClient = new JiraClient(restClient, uri)
-        val retVal = jiraClient.addComment(issueId, commentToAdd);
+        val retVal = jiraClient.addComment(issueKey, commentToAdd);
 
         retVal must equalTo(expected)
       }
@@ -67,16 +69,16 @@ class JiraClientTest extends SpecificationWithJUnit with Mockito {
 
   "deleteComment" should {
     "contains" in {
-      val issueId = "JIR-1"
+      val issueKey = "JIR-1"
       val commentId = "12345"
       val commentBody = "coment 1"
       val uri = "http://whiz.kid"
-      val path = "/rest/api/2/issue/"+issueId+"/comment/"+commentId
+      val path = "/rest/api/2/issue/"+issueKey+"/comment/"+commentId
       val commentToDelete  = new JiraComment(commentId, commentBody)
 
       val restClient = mock[RestClient]
       val jiraClient = new JiraClient(restClient, uri)
-      jiraClient.deleteComment(issueId, commentToDelete)
+      jiraClient.deleteComment(issueKey, commentToDelete)
       there was one(restClient).executeDelete(uri + path)
 
       success

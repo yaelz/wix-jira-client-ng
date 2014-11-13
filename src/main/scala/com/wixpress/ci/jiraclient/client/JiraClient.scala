@@ -3,7 +3,7 @@ package com.wixpress.ci.jiraclient.client
 
 import java.net.URI
 
-import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.databind.{DeserializationFeature, DeserializationConfig, ObjectMapper}
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
 import com.wixpress.ci.jiraclient.client.rest.RestClient
 import com.wixpress.ci.jiraclient.model.{JiraComment, Issue}
@@ -17,8 +17,10 @@ import scala.collection.JavaConverters._;
   def getIssue(issueId: String) : Issue = {
     val path : String =uri+ "/rest/api/2/issue/"+issueId
     val result = restClient.executeGet(path)
-//    println(result)
-    null
+    val mapper = new ObjectMapper()
+    mapper.registerModule(DefaultScalaModule)
+    mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+    mapper.readValue(result,classOf[Issue])
   }
 
   def deleteComment(issueId : String, comment: JiraComment): Unit = {
