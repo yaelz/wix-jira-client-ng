@@ -77,6 +77,7 @@ class JiraClientTest extends SpecificationWithJUnit with Mockito {
       val commentToDelete  = new JiraComment(commentId, commentBody)
 
       val restClient = mock[RestClient]
+      val responseFromServer = ServerResponseData.addCommentResponseData(commentId,commentBody);
       val jiraClient = new JiraClient(restClient, uri)
       jiraClient.deleteComment(issueKey, commentToDelete)
       there was one(restClient).executeDelete(uri + path)
@@ -85,32 +86,18 @@ class JiraClientTest extends SpecificationWithJUnit with Mockito {
     }
   }
 
-//  "deleteAllComments" should {
-//    "contains" in {
-//      val progressMonitor = null
-//      val internalRestClient = mock[RestClient]
-//
-//
-//      val comment : Comment = new Comment(null,"whiz kid needs",null,null,null,null,null,1L)
-//      val comment2 : Comment = new Comment(null,"whiz kid a",null,null,null,null,null,1L)
-//      val comment3 : Comment = new Comment(null,"whiz kid wetsuit",null,null,null,null,null,1L)
-//
-//      val comments : util.ArrayList[Comment] = new util.ArrayList[Comment]()
-//      comments.add(comment)
-//      comments.add(comment2)
-//      comments.add(comment3)
-//      val issue = new Issue("summary",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,comments,null,null,null,null,null,null,null,null,null)
-//      val restClient = mock[JiraRestClient]
-//      val issueClient = mock[IssueRestClient]
-//      restClient.getIssueClient() returns issueClient
-//      issueClient.getIssue("issue1", progressMonitor) returns issue
-//
-//
-//      val uri = "http://loaclhost:8080"
-//      val jiraClient = new JiraClient(restClient, progressMonitor,internalRestClient, uri)
-//      val numOfDeletedComments: Int = jiraClient.deleteAllComments("issue1")
-//      there was three (internalRestClient).executeDelete(uri + "/issue1/comment/1")
-//      numOfDeletedComments must equalTo(3)
-//    }
-//  }
+  "deleteAllComments" should {
+    "contains" in {
+      val issueKey = "JIR-1"
+      val issueId = "74538"
+      val uri = "http://whiz.kid"
+      val path = "/rest/api/2/issue/"+issueKey
+      val responseFromServer = ServerResponseData.getIssueResponseData(issueKey);
+      val restClient = mock[RestClient]
+      restClient.executeGet(uri + path) returns responseFromServer
+      val jiraClient = new JiraClient(restClient, uri)
+      val numberOfDeleted = jiraClient.deleteAllComments(issueKey);
+      numberOfDeleted must equalTo(2);
+    }
+  }
 }

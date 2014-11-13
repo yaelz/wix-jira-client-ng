@@ -27,11 +27,11 @@ import scala.collection.JavaConverters._;
     restClient.executeDelete(uri + "/rest/api/2/issue/" + issueId + "/comment/" + comment.id)
   }
 
-//  def deleteAllComments(issueId : String): Int = {
-//    val issue = this.getIssue(issueId)
-//    issue.fields.comment.comments.map(comment => this.deleteComment(issueId, comment.id))
-//    issue.fields.comment.comments.length
-//  }
+  def deleteAllComments(issueId : String): Int = {
+    val issue = this.getIssue(issueId)
+    issue.fields.comment.comments.map(comment => this.deleteComment(issueId, comment))
+    issue.fields.comment.comments.length
+  }
 
   def addComment(issueId : String, jiraComment : JiraComment): JiraComment ={
     val path : String =uri+ "/rest/api/2/issue/"+issueId+"/comment"
